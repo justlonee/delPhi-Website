@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- PAGE CSS -->
+    <link rel="stylesheet" href="../assets/css/detail.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/c0c471bacf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-5 sticky-top">
+        <div class="container-fluid">
+            <div class="navbar-logo-text">
+                <a class="navbar-brand" href="../landing_page.html"><img src="../assets/images/logo.png" alt="logo" height="95px"
+                        width="95px"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../landing_page.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#paa">Contacts</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../keyboards.html">Keyboards</a></li>
+                            <li><a class="dropdown-item" href="../headsets.html">Headsets</a></li>
+                            <li><a class="dropdown-item" href="../mice.html">Mice</a></li>
+                            <li><a class="dropdown-item" href="../monitors.html">Monitors</a></li>
+                            <li><a class="dropdown-item disabled" href="#">More</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="product-div">
+                <div class="product-div-left">
+                    <div class="img-container">
+                        <img id="primaryImage" src="../assets/images/keyboard/keyb1.png" alt="watch">
+                    </div>
+                    <div class="hover-container">
+                        <div><img src="../assets/images/keyboard/keyb1.png" onclick="changeImage('../assets/images/keyboard/keyb1.png')"></div>
+                        <div><img src="../assets/images/keyboard/keyb3.png" onclick="changeImage('../assets/images/keyboard/keyb3.png')"></div>
+                        <div><img src="../assets/images/keyboard/keyb4.png" onclick="changeImage('../assets/images/keyboard/keyb4.png')"></div>
+                        <div><img src="../assets/images/keyboard/keyb5.png" onclick="changeImage('../assets/images/keyboard/keyb5.png')"></div>
+                    </div>
+                </div>
+                <div class="product-div-right">
+                    <span class="product-name">Apex Phantom</span>
+                    <span class="product-price">$50.25</span>
+                    <div class="product-rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star-half-alt"></i></span>
+                        <span>(320 ratings)</span>
+                    </div>
+                    <div class="btn-groups">
+                        <button onclick="window.location.href='../index.html'" type="button" class="add-cart-btn"><i class="fas fa-shopping-cart"></i>add to
+                            cart</button>
+                        <button onclick="window.location.href='../index.html'" type="button" class="buy-now-btn"><i class="fas fa-wallet"></i>buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-wrapper2">
+        <div class="container">
+            <div class="product-div">
+                <!-- Product Details -->
+                <div class="product-specs">
+                    <h4>Product Description</h4>
+                    <div>
+                        <span>Category</span>
+                        <span>Shop > Keyboard > Model 1</span>
+                    </div>
+                    <div>
+                        <span>Stock</span>
+                        <span>67</span>
+                    </div>
+                    <div>
+                        <span>Ships From</span>
+                        <span>Mainland China</span>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <h4>Product Specifications</h4>
+                    <ul>
+                        <li><strong>Switch Type</strong>: Mechanical (Cherry MX Blue)</li>
+                        <li><strong>Key Rollover</strong>: N-Key Rollover with 100% Anti-Ghosting</li>
+                        <li><strong>Backlighting</strong>: RGB with 16.8 million colors, customizable per-key lighting
+                        </li>
+                        <li><strong>Macro Keys</strong>: 10 programmable macro keys</li>
+                        <li><strong>Connection</strong>: USB-C detachable braided cable</li>
+                        <li><strong>Build Material</strong>: Aluminum top plate, ABS plastic bottom</li>
+                        <li><strong>Keycaps</strong>: Double-shot PBT keycaps</li>
+                        <li><strong>Layout</strong>: Full-size (104 keys)</li>
+                        <li><strong>Polling Rate</strong>: 1000 Hz</li>
+                        <li><strong>Media Controls</strong>: Dedicated media control buttons with volume roller</li>
+                        <li><strong>Software</strong>: Custom software for macros, lighting, and profile management</li>
+                        <li><strong>Dimensions</strong>: 450mm x 150mm x 40mm</li>
+                        <li><strong>Weight</strong>: 1.2 kg</li>
+                        <li><strong>Special Features</strong>:
+                            <ul>
+                                <li>Dedicated gaming mode</li>
+                                <li>Onboard memory for up to 5 profiles</li>
+                                <li>USB passthrough port</li>
+                                <li>Adjustable height with three levels</li>
+                                <li>Detachable wrist rest with memory foam padding</li>
+                            </ul>
+                        </li>
+                        <li><strong>Compatibility</strong>: Windows, macOS, Linux</li>
+                        <li><strong>Warranty</strong>: 3 years</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="content-wrapper" id="paa">
+        <!-- Your main content here -->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="../assets/images/logo2.png" class="logo" alt="Company Logo">
+                    <p>Experience the ultimate in gaming performance with delPhi's innovative PC peripherals. Our precision-engineered gear is designed to enhance your gameplay, offering unparalleled control and comfort. Elevate every gaming session with delPhi, where excellence meets innovation.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>Support</h3>
+                    <p>FAQ</p>
+                    <p>Privacy Policy</p>
+                    <p>Help</p>
+                    <p>Contact</p>
+                </div>
+                <div class="col">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="../keyboards.html">Keyboards</a></li>
+                        <li><a href="../mice.html">Mice</a></li>
+                        <li><a href="../monitors.html">Monitors</a></li>
+                        <li><a href="../headsets.html">Headsets / Headphones</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email ID" required>
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Delphi Peripherals © 2024 - All rights Reserved</p>
+        </footer>
+    </div>
+    <!-- END OF FOOTER -->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../assets/js/scriptItemSelect.js"></script>
+</body>
+
+</html>
